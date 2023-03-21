@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <!-- FUENTE PARA ICONOS (POR EJEMPLO LUPA DE CAMPO BUSQUEDA) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Inicio</title>
+  </head>
+  <body>
+    <!-- <header>
+      
+    </header> -->
+
+    <main>
+      <!-- El siguiente div es para el carousel -->
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class=""
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+            class="active"
+            aria-current="true"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+            class=""
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item" data-bs-interval="10000">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+              width="800"
+              height="400"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: First slide"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#f5f5f5"></rect>
+              <text x="50%" y="50%" fill="#aaa" dy=".3em">First slide</text>
+            </svg>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item active" data-bs-interval="2000">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+              width="800"
+              height="400"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: Second slide"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#eee"></rect>
+              <text x="50%" y="50%" fill="#bbb" dy=".3em">Second slide</text>
+            </svg>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+              width="800"
+              height="400"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: Third slide"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#e5e5e5"></rect>
+              <text x="50%" y="50%" fill="#999" dy=".3em">Third slide</text>
+            </svg>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- el carousel llega hasta aquí -->
+
+      <!-- CONTENEDOR QUE CONTIENE A LA BARRA LATERAL Y A LA COLUMNA PRINCIPAL -->
+      <div
+        class="container position-relative end-25"
+        style="background-color: rgba(15, 3, 38, 1)"
+      >
+        <!-- BARRA LATERAL -->
+        <!-- HABRÍA QUE DEJAR BIEN ACOMODADA LA BARRA LATERAL, EL BOTON DE BUSCAR NO LO PUEDO ACOMODAR DEBAJO DEL CAMPO INPUT Y CREO QUE UNA VEZ QUE HABLEMOS SOBRE EL TEMAÑO
+QUE TENDRAN TODAS LAS TARJETAS AHÍ VAMOS A PODER DEFINIR BIEN EL ANCHO QUE VA A TENER LA BARRA LATERAL -->
+        <!-- BUSCAR -->
+
+        <!-- COLUMNA PRINCIPAL -->
+        <div class="cards_HomePrincipal position-absolute top-0 start-0">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100 bg-transparent">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Placeholder: Image cap"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#868e96"></rect>
+                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
+                    Image cap
+                  </text>
+                </svg>
+                <div class="card text-center m-auto border-0 bg-transparent">
+                  <h4 class="card-title text-light fw-bold text-center">
+                    EJEMPLO
+                  </h4>
+                  <p
+                    class="card text-light fw-bold text-center border-0 bg-transparent"
+                  >
+                    TEXTO DE EJEMPLO CON DESCRIPCION CORTA SOBRE EL ALBUM.
+                  </p>
+                  <div class="d-grid gap-2 col-4 mx-auto">
+                    <a
+                      href="#"
+                      class="btn btn-outline-light fw-bold text-center"
+                      >VER MÁS</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-transparent">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Placeholder: Image cap"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#868e96"></rect>
+                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
+                    Image cap
+                  </text>
+                </svg>
+                <div class="card text-center m-auto border-0 bg-transparent">
+                  <h4 class="card-title text-light fw-bold text-center">
+                    EJEMPLO
+                  </h4>
+                  <p
+                    class="card text-light fw-bold text-center border-0 bg-transparent"
+                  >
+                    TEXTO DE EJEMPLO CON DESCRIPCION CORTA SOBRE EL ALBUM.
+                  </p>
+                  <div class="d-grid gap-2 col-4 mx-auto">
+                    <a
+                      href="#"
+                      class="btn btn-outline-light fw-bold text-center"
+                      >VER MÁS</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-transparent">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Placeholder: Image cap"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#868e96"></rect>
+                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
+                    Image cap
+                  </text>
+                </svg>
+                <div class="card text-center m-auto border-0 bg-transparent">
+                  <h4 class="card-title text-light fw-bold text-center">
+                    EJEMPLO
+                  </h4>
+                  <p
+                    class="card text-light fw-bold text-center border-0 bg-transparent"
+                  >
+                    TEXTO DE EJEMPLO CON DESCRIPCION CORTA SOBRE EL ALBUM.
+                  </p>
+                  <div class="d-grid gap-2 col-4 mx-auto">
+                    <a
+                      href="#"
+                      class="btn btn-outline-light fw-bold text-center"
+                      >VER MÁS</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100 bg-transparent">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Placeholder: Image cap"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#868e96"></rect>
+                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
+                    Image cap
+                  </text>
+                </svg>
+                <div class="card text-center m-auto border-0 bg-transparent">
+                  <h4 class="card-title text-light fw-bold text-center">
+                    EJEMPLO
+                  </h4>
+                  <p
+                    class="card text-light fw-bold text-center border-0 bg-transparent"
+                  >
+                    TEXTO DE EJEMPLO CON DESCRIPCION CORTA SOBRE EL ALBUM.
+                  </p>
+                  <div class="d-grid gap-2 col-4 mx-auto">
+                    <a
+                      href="#"
+                      class="btn btn-outline-light fw-bold text-center"
+                      >VER MÁS</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-transparent">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Placeholder: Image cap"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#868e96"></rect>
+                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
+                    Image cap
+                  </text>
+                </svg>
+                <div class="card text-center m-auto border-0 bg-transparent">
+                  <h4 class="card-title text-light fw-bold text-center">
+                    EJEMPLO
+                  </h4>
+                  <p
+                    class="card text-light fw-bold text-center border-0 bg-transparent"
+                  >
+                    TEXTO DE EJEMPLO CON DESCRIPCION CORTA SOBRE EL ALBUM.
+                  </p>
+                  <div class="d-grid gap-2 col-4 mx-auto">
+                    <a
+                      href="#"
+                      class="btn btn-outline-light fw-bold text-center"
+                      >VER MÁS</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-transparent">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Placeholder: Image cap"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#868e96"></rect>
+                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
+                    Image cap
+                  </text>
+                </svg>
+                <div class="card text-center m-auto border-0 bg-transparent">
+                  <h4 class="card-title text-light fw-bold text-center">
+                    EJEMPLO
+                  </h4>
+                  <p
+                    class="card text-light fw-bold text-center border-0 bg-transparent"
+                  >
+                    TEXTO DE EJEMPLO CON DESCRIPCION CORTA SOBRE EL ALBUM.
+                  </p>
+                  <div class="d-grid gap-2 col-4 mx-auto">
+                    <a
+                      href="#"
+                      class="btn btn-outline-light fw-bold text-center"
+                      >VER MÁS</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100 bg-transparent">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Placeholder: Image cap"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#868e96"></rect>
+                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
+                    Image cap
+                  </text>
+                </svg>
+                <div class="card text-center m-auto border-0 bg-transparent">
+                  <h4 class="card-title text-light fw-bold text-center">
+                    EJEMPLO
+                  </h4>
+                  <p
+                    class="card text-light fw-bold text-center border-0 bg-transparent"
+                  >
+                    TEXTO DE EJEMPLO CON DESCRIPCION CORTA SOBRE EL ALBUM.
+                  </p>
+                  <div class="d-grid gap-2 col-4 mx-auto">
+                    <a
+                      href="#"
+                      class="btn btn-outline-light fw-bold text-center"
+                      >VER MÁS</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-transparent">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Placeholder: Image cap"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#868e96"></rect>
+                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
+                    Image cap
+                  </text>
+                </svg>
+                <div class="card text-center m-auto border-0 bg-transparent">
+                  <h4 class="card-title text-light fw-bold text-center">
+                    EJEMPLO
+                  </h4>
+                  <p
+                    class="card text-light fw-bold text-center border-0 bg-transparent"
+                  >
+                    TEXTO DE EJEMPLO CON DESCRIPCION CORTA SOBRE EL ALBUM.
+                  </p>
+                  <div class="d-grid gap-2 col-4 mx-auto">
+                    <a
+                      href="#"
+                      class="btn btn-outline-light fw-bold text-center"
+                      >VER MÁS</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-transparent">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Placeholder: Image cap"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#868e96"></rect>
+                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
+                    Image cap
+                  </text>
+                </svg>
+                <div class="card text-center m-auto border-0 bg-transparent">
+                  <h4 class="card-title text-light fw-bold text-center">
+                    EJEMPLO
+                  </h4>
+                  <p
+                    class="card text-light fw-bold text-center border-0 bg-transparent"
+                  >
+                    TEXTO DE EJEMPLO CON DESCRIPCION CORTA SOBRE EL ALBUM.
+                  </p>
+                  <div class="d-grid gap-2 col-4 mx-auto">
+                    <a
+                      href="#"
+                      class="btn btn-outline-light fw-bold text-center"
+                      >VER MÁS</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="aside position-absolute top-0 start-100 mx-1">
+          <div class="col-sm-12 col-md-4 mt-3 px-2">
+            <div class="asideIndexBar text-light d-flex flex-column sticky-top">
+              <p>¿Buscas algo en especial?</p>
+              <form class="d-flex mt-0">
+                <input
+                  class="text-black form-control rounded-pill w-75"
+                  type="search"
+                  placeholder=""
+                  aria-label="Search"
+                />
+                <a href="" class="btn btn-outline-light text-center">Buscar</a>
+              </form>
+
+              <!--CATEGORIAS-->
+              <br />
+              <div class="accordion-body d-flex flex-column">
+                <h5>CATEGORIAS</h5>
+                <a href="" class="categoriaMusical">Ver todas las categorías</a>
+                <br />
+                <a href="" class="categoriaMusical">Rock Nacional</a>
+                <a href="" class="categoriaMusical">Rock Internacional</a>
+                <a href="" class="categoriaMusical">Trap</a>
+                <a href="" class="categoriaMusical">Reggaeton</a>
+                <a href="" class="categoriaMusical">Heavy metal</a>
+                <a href="" class="categoriaMusical">Pop</a>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+  </body>
+  <!-- ================================================
+                  Scripts
+  ================================================ -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+</html>
