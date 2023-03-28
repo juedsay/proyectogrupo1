@@ -1,0 +1,53 @@
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px) saturate(120%) !important;
+  -webkit-backdrop-filter: blur(10px) saturate(120%) !important;  
+}
+
+.card-footer {
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer i:hover {
+  color: rgba(0, 240, 0, 0.61);
+  font-size: 120%;
+  transition: 0.3s;
+}
+footer a:hover {
+  color: rgba(0, 240, 0, 0.61);
+  font-size: 120%;
+  transition: 0.2s;
+}
+
+.font-footer {
+  font-family: "Oswald", sans-serif;
+}
+
+.footer-input {
+  width: 69%;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 480px) {
+  .footer-title {
+    padding-left: 45px;
+  }
+
+  .footer-title-dos {
+    margin: 10px;
+  }
+  .font-responsive {
+    font-size: 15px;
+    padding-left: 65px;
+  }
+}

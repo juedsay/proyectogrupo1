@@ -1,0 +1,176 @@
+:root {
+  --background: #0f0326;
+  --background-transparente: rgba(0, 0, 0, 0.4);
+  --color-focus-input: #1ed760;
+  --facebook-button-color: #2374e1;
+  --google-button-color: #eb4235;
+  --input-focus: #1ed760;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body.login-body {
+  background-image: url(/assets/images/login/main-background-image.jpg) !important;
+  background-size: cover !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+}
+
+/* ======================================
+        Ajustes contenedor Login
+====================================== */
+.main-container-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 82px);
+  font-family: "Oswald", sans-serif;
+}
+.column-container-login {
+  display: flex;
+  width: 70%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  min-height: 40vh;
+}
+.form-column-login {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px) saturate(120%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(120%) !important;
+  color: white;
+  flex-grow: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-image-column {
+  background-color: var(--background-transparente);
+  backdrop-filter: blur(20px) saturate(120%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(120%) !important;
+  background-image: url(/assets/images/login/imagen-section-login.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  flex-grow: 10;
+}
+/* 
+=======================
+Ajustes area formulario
+======================= */
+
+form.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+div.input-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+input.input-transparent {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  border-bottom: 1px solid white;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  font-family: "system-ui", sans-serif;
+}
+i.input-icon-form {
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(20%);
+  transition: color 0.3s ease-in-out;
+}
+.input-transparent:focus,
+.input-transparent:active {
+  border-bottom: solid 1px var(--input-focus);
+}
+.input-transparent:focus + .input-icon-form,
+.input-transparent:active + .input-icon-form {
+  color: var(--input-focus);
+}
+
+.log-in-button {
+  background-color: transparent;
+  border: solid white 2px;
+  border-radius: 10px;
+  color: white;
+  padding: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.log-in-button:hover,
+.log-in-button:focus {
+  background-color: white;
+  color: black;
+}
+.forgot-your-password {
+  text-align: center;
+  text-decoration: none;
+  margin-top: 2rem;
+}
+.forgot-your-password a {
+  color: white;
+  text-decoration: none;
+}
+.social-login-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.social-button-login {
+  padding: 0.5rem;
+  background-color: transparent;
+  border: solid white 2px;
+  color: white;
+  border-radius: 20px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 10rem;
+  font-family: "system-ui", sans-serif;
+}
+.facebook-button-login:hover,
+.facebook-button-login:focus {
+  background-color: var(--facebook-button-color);
+  transition: 0.2s ease-in-out;
+  border-color: var(--facebook-button-color);
+}
+.google-button-login:hover,
+.google-button-login:focus {
+  background-color: var(--google-button-color);
+  transition: 0.2s ease-in-out;
+  border-color: var(--google-button-color);
+}
+.register-login-page {
+  text-align: center;
+  margin-top: 1rem;
+}
+.register-login-page a {
+  color: white;
+  text-decoration: none;
+}
+/* ====================================================
+
+Desaparecer columna con imagen en pantallas pequeñas
+
+==================================================== */
+
+@media screen and (max-width: 1023px) {
+  .form-image-column {
+    display: none;
+  }
+  .column-container-login {
+    width: 90%;
+  }
+}

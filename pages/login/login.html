@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="/styles/universal/header.css" />
+    <link rel="stylesheet" href="/styles/universal/footer.css">
+    <link rel="icon" type="image/png" href="/assets/images/logo-proyect/favicon.png">
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/login/login.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Iniciar sesión</title>
+  </head>
+  <body>
+    <body class="login-body">
+        <!-- Header -->
+        <header class="main-header">        
+          <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark navbar-universal" data-bs-theme="dark">
+            <div class="container-fluid logo-area-header">
+              <a class="navbar-brand" href="/index.html"><img class="logo-header" src="/assets/images/logo-proyect/logo.gif" alt="Logo" width="70px"></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ul-navbar-main">
+                  <li class="nav-item li-links-navbar">
+                    <a class="nav-link active" aria-current="page" class="a-links-navbar" href="/index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item li-links-navbar">
+                    <a class="nav-link" href="/pages/albums/albums.html">Álbumes</a>
+                  </li>
+                  <li class="nav-item li-links-navbar">
+                    <a class="nav-link" href="/pages/404/404.html">Próximos Lanzamientos</a>
+                  </li>
+                  <li class="nav-item li-links-navbar">
+                    <a class="nav-link" href="/pages/about-us/about-us.html">Sobre Nosotros</a>
+                  </li>  
+                  <li class="nav-item li-links-navbar">
+                    <a class="nav-link" href="/pages/contact-us/contact-us.html">Contacto</a>
+                  </li>  
+      <div class="contenedor-botones-header">
+                  <!-- ------ MODAL Botón ------     -->
+      <button type="button" class="btn btn-reset boton-suscribirse" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Suscribirse
+        </button> 
+        <a href="/pages/login/login.html" class="link-login">
+          <i class="fa-solid fa-user icono-login-usuario"></i>
+        </a>
+          </nav>  
+      </header>
+               <!-- Modal Pop Pup-->
+               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content pop-up-suscribirse">
+                    <div class="modal-header">
+                      <h2 class="modal-title fs-5" id="exampleModalLabel">¡Suscribite para recibir las ultimas novedades sobre la música!!</h2>
+                      <button type="button" class="btn-close boton-cerrar-popup" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">          
+                      <form action="" class="formulario-suscribirse">
+                        <label for="nombre">Nombre</label>
+                          <input type="text" id="nombre" name="nombre" maxlength="30" required>
+                        
+                        <label for="email">Su correo electronico</label>
+                          <input type="email" name="email" id="email" maxlength="255" required>
+                        
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary botones-popup" data-bs-dismiss="modal">Cancelar</button>
+                      <a href="/pages/404/404.html">
+                      <button type="button" class="btn btn-primary botones-popup">Suscribirme ahora</button>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </body>
+    <!-- Contenedor principal -->
+    <div class="main-container-login">
+      <!-- Este contiene las dos columnas -->
+      <div class="column-container-login">
+        <!-- Columna del formulario de login -->
+        <div class="form-column-login">
+          <h2>¡Bienvenido de nuevo!</h2>
+          <form action="" class="login-form">
+            <div class="input-container">
+              <label for="usuario">Usuario</label>
+              <input
+                type="text"
+                class="input-transparent"
+                id="usuario"
+                minlength="1"
+                required
+                maxlength="16"
+              />
+              <i class="fa-solid fa-user input-icon-form"></i>
+            </div>
+            <div class="input-container">
+              <label for="contraseña">Contraseña</label>
+              <input
+                type="password"
+                class="input-transparent"
+                id="contraseña"
+                minlength="1"
+                maxlength="71"
+              />
+              <i class="fa-solid fa-lock input-icon-form"></i>
+            </div>
+            <button type="submit" class="log-in-button">
+              Iniciar sesión
+            </button>
+          </form>
+          <div class="forgot-your-password">
+            <a href="/pages/404/404.html">
+              <p>¿Olvidaste tu contraseña?</p>
+            </a>
+          </div>
+          <div class="social-login-container">
+            <div class="login-google">
+              <a href="/pages/404/404.html">
+              <button class="social-button-login google-button-login">
+                <i class="fa-brands fa-google"></i> Google
+              </button>
+            </a>
+            </div>
+            <div class="login-facebook">
+              <a href="/pages/404/404.html">
+              <button class="social-button-login facebook-button-login">
+                <i class="fa-brands fa-facebook-f"></i> Facebook
+              </button>
+            </a>
+            </div>
+          </div>
+          <div class="register-login-page">
+            <a href="/pages/404/404.html">
+              <p>¿Eres nuevo? ¡Regístrate acá!</p>
+            </a>
+          </div>
+        </div>
+        <!-- Columna que contiene la imagen a la derecha del formulario -->
+        <div class="form-image-column"></div>
+      </div>
+    </div>
+    <footer class="container-fluid text-white">
+      <div class="row">
+        <!--///////////////////////////    SECTION 1   ///////////////////////////////////////////////  -->
+        <div class="col-12 col-md-4 d-flex justify-content-center">
+          <div>
+            <div class=""><h6 class="pt-3  font-footer fs-5">Siguenos en nuestras redes!</h6></div>
+            <div class="ps-5 d-flex justify-content-end flex-column">
+              
+                <i class="fa-brands fa-facebook"> <a class="font-footer" href="/pages/error404-2.html">Facebook</a> </i
+                >
+              
+                <i class="fa-brands fa-instagram">
+                  <a class="font-footer" href="/pages/error404-2.html">Instagram</a></i
+                >
+             <i class="fa-brands fa-twitter pb-2 ">
+                  <a class="font-footer" href="/pages/error404-2.html">Twitter</a></i
+                >
+            </div>
+            <div> 
+              <div class=""><h6 class=" font-footer fs-5">Agregamos novedades todas las semanas!</h6></div>
+            </div>
+          </div>
+        </div>
+        <!--////////////////////////////     SECTION 2   ///////////////////////////////////////////  -->
+        <div class="col-12 col-md-4 d-flex flex-column">
+          <div class="pb-2 pt-2 d-flex justify-content-center">
+            <div class="pt-3">
+              <img
+                src="/assets/images/logo-proyect/logo.gif"
+                class="card-footer"
+                alt="qsdqd"
+              />
+            </div>
+
+            
+          </div>
+           <div class="d-flex justify-content-center pb-3 font-footer">Música y más música</div>
+          
+        </div>
+        <!-- ///////////////////////////////// SECTION 3   ////////////////////////////////////////// -->
+        <div class="col-12 col-md-4 border-1 border-light">
+          <div class="pt-3 pe-2">
+            <h4 class="font-footer d-flex justify-content-center ps-4 pe-5">Suscríbite para las últimas novedades de la música!</h4>
+          </div>
+          <form action="">
+          <div class=" d-flex justify-content-center pe-5 ps-0"> <input type="email" class="footer-input pe-5" placeholder="ejemplo@correo.com" minlength="10" maxlength="40" required > <input type="submit" class="btn btn-outline-light ms-1" ></div>
+          
+        </div>
+        </form>
+        </div>
+      </div>
+      <!--  /////////////////////////////////////////////////////////////////////////////////// -->
+    </footer>
+  </body>
+  <!-- Aqui los scripts que contiene el sitio  -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+</html>

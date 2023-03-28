@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.albumes-body {
+  background: linear-gradient(#0f0326, #2d0972);
+  font-family: "Oswald", sans-serif;
+}
+
+.titleh1 {
+  color: #ffffff;
+}
+
+.galeria h1 {
+  text-align: center;
+  margin: 20px 0 15px 0;
+  font-weight: 300;
+}
+
+.linea {
+  border-top: 10px solid #1ed760;
+  margin-bottom: 40px;
+}
+
+.contenedor-imagenes {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contenedor-imagenes .imagen {
+  width: 23%;
+  position: relative;
+  height: 500px;
+  margin-bottom: 12px;
+  box-shadow: 0px 0px 3px 0px #000000;
+  border-radius: 20px;
+  display: inline-block;
+}
+.imagen {
+  max-width: 350px;
+  max-height: 350px;
+}
+
+.imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px 0px #000000;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(115, 38, 203, 0.75);
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+  border-radius: 20px;
+}
+
+.overlay h2 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 300;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.overlay h2 a {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid #1ed760;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+}
+
+.overlay h2 a:hover {
+  background: #1ed760;
+  box-shadow: 0 0 30px 5px #1ed760;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.overlay h2 a:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+.overlay h2 a::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #ffffff;
+  box-shadow: 0 0 50px 30px #ffffff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.overlay h2 a:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+.imagen:hover .overlay {
+  height: 100%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1500px) {
+  .contenedor-imagenes {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .contenedor-imagenes {
+    width: 100%;
+  }
+  .contenedor-imagenes .imagen {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .contenedor-imagenes {
+    width: 98%;
+  }
+  .contenedor-imagenes .imagen {
+    width: 80%;
+  }
+}

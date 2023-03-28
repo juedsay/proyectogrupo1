@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body-contactus {
+  background: #41295a;
+  background: -webkit-linear-gradient(to right, #41295a, #2f0743);
+  background: linear-gradient(#41295a, #0f0326, #2f0743);
+  min-height: 100vh;
+}
+
+.super-container-contactus {
+  min-height: 100vh;
+}
+.title-contact {
+  /* padding-left: 140px; */
+  font-family: "Oswald", sans-serif;
+}
+.main-contactus {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 1rem;
+  padding: 1rem;
+}
+.main-contacus {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container-form-1 {
+  display: flex;
+  flex-direction: column;
+
+  width: 500px;
+  height: 400px;
+  padding: 1rem;
+  margin: 1rem;
+  color: white;
+  border-radius: 15px;
+}
+.container-form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.603);
+  width: 500px;
+  height: 400px;
+  padding: 1rem;
+  margin: 1rem;
+  color: white;
+  border-radius: 15px;
+}
+.sub-container-form {
+  display: flex;
+  flex-direction: column;
+  border: white;
+  border-radius: 15px;
+  margin: 0.5rem;
+}
+.contact-button {
+  border: solid white 1px;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 80px;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+.container-form a {
+  display: flex;
+  padding-left: 9px;
+  margin-top: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.hover-contact {
+  width: 100%;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.hover-contact:focus {
+  background: #ffffff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #b4a3c7,
+    #dac4e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(#d3c1e7, #fffeff, #ceabdf);
+}
+
+.contact-label {
+  margin-bottom: 0.5rem;
+}
+
+.container-map {
+  margin: 1rem;
+  width: 550px;
+  height: 400px;
+}
+.map {
+  border-radius: 15px;
+  width: 500px;
+  height: 400px;
+}
+
+@media screen and (min-width: 480px) {
+  .title-contact {
+    padding-left: 140px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .map {
+    border-radius: 15px;
+    width: 250px;
+    height: 200px;
+  }
+  .container-map {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    justify-content: start;
+    width: 250px;
+    height: 200px;
+  }
+  .main-contactus {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,156 @@
+:root {
+  --violeta-bg: #0f0326;
+  --violeta-universal: #651ded;
+  --verde-universal: #1ed760;
+}
+
+body.home-body {
+  background-color: rgba(15, 3, 38, 1);
+}
+.container {
+  flex-direction: row;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+/* .carousel{
+  position: relative;
+} */
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  list-style: none;
+}
+
+.c-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  max-height: 30rem;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out;
+  min-height: 8rem;
+}
+.c-img {
+  width: 100% !important;
+  display: block !important;
+  box-sizing: border-box;
+  object-fit: fill;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+body {
+  background-color: rgba(15, 3, 38, 1);
+}
+.container {
+  position: absolute;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: "Oswald", sans-serif;
+}
+
+/* Lo siguiente era para intentar que se alinearan los botones y el contenido de las Cards de la columna principal pero por algun motivo no funciona */
+/* .main-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main-card.body-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-card.body-card.card.text-light {
+  flex-grow: 1;
+} */
+
+aside {
+  display: flex !important;
+  flex-direction: column !important;
+  order: initial;
+}
+
+.asideIndexBar {
+  display: flex !important;
+  flex-direction: column !important;
+  position: sticky;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 50%;
+}
+
+.search-sideBar {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  margin: auto;
+}
+
+.text-black {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+/* =================
+      aside
+================= */
+.div-contenedor-home {
+  position: sticky;
+  top: 7.5rem;
+  height: 40%;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 100%;
+}
+input.input-buscar {
+  padding-left: 1rem;
+  width: 15rem;
+  margin-right: 0.3rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+}
+div.contenedor-categorias-home a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+div.contenedor-categorias-home a:hover,
+div.contenedor-categorias-home a:focus {
+  color: var(--verde-universal);
+}
+
+.adv-item {
+  display: flex !important;
+  margin-top: 5%;
+  box-sizing: content-box !important;
+}
+
+@media screen and (max-width: 425px) {
+  #carouselAdvertisingIndex {
+    display: none;
+    height: 0%;
+  }
+  .div-contenedor-home {
+    height: 4rem;
+  }
+}

@@ -1,540 +1,420 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Cambié aqui la referencia para poder trabajar offline -->
-    <link
-      href="/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <!-- Cambié aqui la referencia para poder trabajar offline -->
-    <link href="/css/docs.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <!-- FUENTE PARA ICONOS (POR EJEMPLO LUPA DE CAMPO BUSQUEDA) -->
-    <!-- Cambié aqui la referencia para poder trabajar offline -->
-    <link
-      rel="stylesheet"
-      href="CSS/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Inicio</title>
-  </head>
-  <body>
-    <!-- <header>
-      
-    </header> -->
 
-    <main class="container-fluid">
-      <!-- El siguiente div es para el carousel -->
-      <div id="carouselExampleDark" class="carousel carousel-dark slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="0"
-            class=""
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-            class="active"
-            aria-current="true"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-            class=""
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item" data-bs-interval="10000">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
-              width="800"
-              height="400"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: First slide"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#f5f5f5"></rect>
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">First slide</text>
-            </svg>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item active" data-bs-interval="2000">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
-              width="800"
-              height="400"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: Second slide"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee"></rect>
-              <text x="50%" y="50%" fill="#bbb" dy=".3em">Second slide</text>
-            </svg>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
-              width="800"
-              height="400"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: Third slide"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#e5e5e5"></rect>
-              <text x="50%" y="50%" fill="#999" dy=".3em">Third slide</text>
-            </svg>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  
+  <link rel="stylesheet" href="/styles/home/style.css" />
+  <link rel="stylesheet" href="/styles/universal/header.css">
+  <link rel="stylesheet" href="/styles/universal/footer.css">
+  <link rel="icon" type="image/png" href="/assets/images/logo-proyect/favicon.png">
+
+  <!-- FUENTE PARA ICONOS (POR EJEMPLO LUPA DE CAMPO BUSQUEDA) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- FUENTE ELEGIDA PARA TODA EL SITIO WEB -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <title>Inicio</title>
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark navbar-universal" data-bs-theme="dark">
+      <div class="container-fluid logo-area-header">
+        <a class="navbar-brand" href="/index.html"><img class="logo-header" src="/assets/images/logo-proyect/logo.gif"
+            alt="Logo" width="70px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ul-navbar-main">
+            <li class="nav-item li-links-navbar">
+              <a class="nav-link active" aria-current="page" class="a-links-navbar" href="/index.html">Inicio</a>
+            </li>
+            <li class="nav-item li-links-navbar">
+              <a class="nav-link" href="/pages/albums/albums.html">Álbumes</a>
+            </li>
+            <li class="nav-item li-links-navbar">
+              <a class="nav-link" href="/pages/404/404.html">Próximos Lanzamientos</a>
+            </li>
+            <li class="nav-item li-links-navbar">
+              <a class="nav-link" href="/pages/about-us/about-us.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item li-links-navbar">
+              <a class="nav-link" href="/pages/contact-us/contact-us.html">Contacto</a>
+            </li>
+            <div class="contenedor-botones-header">
+              <!-- ------ MODAL Botón ------     -->
+              <button type="button" class="btn btn-reset boton-suscribirse" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                Suscribirse
+              </button>
+              <a href="/pages/login/login.html" class="link-login">
+                <i class="fa-solid fa-user icono-login-usuario"></i>
+              </a>
+    </nav>
+
+  </header>
+  <!-- Modal Pop Pup-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content pop-up-suscribirse">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="exampleModalLabel">¡Suscribite para recibir las ultimas novedades sobre la
+            música!</h2>
+          <button type="button" class="btn-close boton-cerrar-popup" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="" class="formulario-suscribirse">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" maxlength="30" required>
+
+            <label for="email">Su correo electronico</label>
+            <input type="email" name="email" id="email" maxlength="255" required>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary botones-popup" data-bs-dismiss="modal">Cancelar</button>
+          <a href="/pages/404/404.html">
+            <button type="button" class="btn btn-primary botones-popup">Suscribirme ahora</button>
+          </a>
+        </div>
       </div>
-      <!-- el carousel llega hasta aquí -->
+    </div>
+  </div>
+  <main class="container-fluid">
+    <!-- El siguiente div es para el carousel -->
+    <div id="carousel-HeaderHome" class="carousel slide carousel-fade" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel-HeaderHome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel-HeaderHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel-HeaderHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="/assets/images/banners/Banner_1.png" class="d-block w-100 c-img" alt="Blogtify Banner">
+          <div class="carousel-caption d-none d-md-block">                      
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="/assets/images/banners/Banner_2.png" class="d-block w-100 c-img" alt="Blogtify Banner">
+          <div class="carousel-caption d-none d-md-block">           
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="/assets/images/banners/bannertemporal.png" class="d-block w-100 c-img" alt="">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>PUBLICITE AQUÍ</h2>
+            <p>VISITE SECCIÓN "CONTACTO" PARA MÁS INFORMACIÓN</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-HeaderHome" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-HeaderHome" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- el carousel llega hasta aquí -->
 
-      <!-- CONTENEDOR QUE CONTIENE A LA BARRA LATERAL Y A LA COLUMNA PRINCIPAL -->
-      <div class="row" style="background-color: red">
-        <!-- BARRA LATERAL -->
-        <!-- HABRÍA QUE DEJAR BIEN ACOMODADA LA BARRA LATERAL, EL BOTON DE BUSCAR NO LO PUEDO ACOMODAR DEBAJO DEL CAMPO INPUT Y CREO QUE UNA VEZ QUE HABLEMOS SOBRE EL TEMAÑO
-QUE TENDRAN TODAS LAS TARJETAS AHÍ VAMOS A PODER DEFINIR BIEN EL ANCHO QUE VA A TENER LA BARRA LATERAL -->
-        <!-- BUSCAR -->
-
-        <!-- COLUMNA PRINCIPAL -->
-        <div class="col-sm-12 col-md-10" style="background-color: yellow">
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card h-100 bg-transparent">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="180"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Image cap"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#868e96"></rect>
-                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
-                    Image cap
-                  </text>
-                </svg>
-                <div class="card text-center m-auto border-0 bg-transparent">
-                  <h4 class="card-title text-light fw-bold text-center">
-                    EJEMPLO
-                  </h4>
-                  <p
-                    class="card text-light fw-bold text-center border-0 bg-transparent"
-                  >
-                    TEXTO DE EJEMPLO CON DESCRIPCION CORTA SOBRE EL ALBUM.
-                  </p>
-                  <div class="d-grid gap-2 col-4 mx-auto">
-                    <a
-                      href="#"
-                      class="btn btn-outline-light fw-bold text-center"
-                      >VER MÁS</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 bg-transparent">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="180"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Image cap"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#868e96"></rect>
-                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
-                    Image cap
-                  </text>
-                </svg>
-                <div class="card text-center m-auto border-0 bg-transparent">
-                  <h4 class="card-title text-light fw-bold text-center">
-                    EJEMPLO
-                  </h4>
-                  <p
-                    class="card text-light fw-bold text-center border-0 bg-transparent"
-                  >
-                    TEXTO DE EJEMPLO CON DESCRIPCION CORTA SOBRE EL ALBUM.
-                  </p>
-                  <div class="d-grid gap-2 col-4 mx-auto">
-                    <a
-                      href="#"
-                      class="btn btn-outline-light fw-bold text-center"
-                      >VER MÁS</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 bg-transparent">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="180"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Image cap"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#868e96"></rect>
-                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
-                    Image cap
-                  </text>
-                </svg>
-                <div class="card text-center m-auto border-0 bg-transparent">
-                  <h4 class="card-title text-light fw-bold text-center">
-                    EJEMPLO
-                  </h4>
-                  <p
-                    class="card text-light fw-bold text-center border-0 bg-transparent"
-                  >
-                    TEXTO DE EJEMPLO CON DESCRIPCION CORTA SOBRE EL ALBUM.
-                  </p>
-                  <div class="d-grid gap-2 col-4 mx-auto">
-                    <a
-                      href="#"
-                      class="btn btn-outline-light fw-bold text-center"
-                      >VER MÁS</a
-                    >
-                  </div>
+    <!-- CONTENEDOR QUE CONTIENE A LA BARRA LATERAL Y A LA COLUMNA PRINCIPAL -->
+    <div class="row">
+      <!-- COLUMNA PRINCIPAL -->
+      <div class="col-sm-12 col-md-9" style="background-color: #0F0326">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col main-card">
+            <div class="card body-card h-100 bg-transparent">
+              <img
+                src="/assets/images/blog/birds-in-the-Trap-Sing-mcknight/cover-album/Birds in the Trap Sing McKnight.jpg"
+                alt="Cover Art del album Birds in the Trap Sing McKnight">
+              <div class="card text-center m-auto border-0 bg-transparent">
+                <h4 class="card-title text-light fw-bold text-center">
+                  Birds in the Trap Sing McKnight
+                </h4>
+                <p class="card text-light fw-bold text-center border-0 bg-transparent">
+                  Fue lanzado el 2 de septiembre de 2016 a través de Grand Hustle Records y...
+                </p>
+                <div class="d-grid gap-2 col-5 d-md-flex mx-auto justify-content-center">
+                  <a href="/pages/blog-archive/birds-in-the-trap-sing-mcknight/blog-post.html" class="btn btn-outline-light fw-bold text-center btn-More">VER MÁS</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card h-100 bg-transparent">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="180"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Image cap"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#868e96"></rect>
-                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
-                    Image cap
-                  </text>
-                </svg>
-                <div class="card text-center m-auto border-0 bg-transparent">
-                  <h4 class="card-title text-light fw-bold text-center">
-                    EJEMPLO
-                  </h4>
-                  <p
-                    class="card text-light fw-bold text-center border-0 bg-transparent"
-                  >
-                    TEXTO DE EJEMPLO CON DESCRIPCION CORTA SOBRE EL ALBUM.
-                  </p>
-                  <div class="d-grid gap-2 col-4 mx-auto">
-                    <a
-                      href="#"
-                      class="btn btn-outline-light fw-bold text-center"
-                      >VER MÁS</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 bg-transparent">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="180"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Image cap"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#868e96"></rect>
-                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
-                    Image cap
-                  </text>
-                </svg>
-                <div class="card text-center m-auto border-0 bg-transparent">
-                  <h4 class="card-title text-light fw-bold text-center">
-                    EJEMPLO
-                  </h4>
-                  <p
-                    class="card text-light fw-bold text-center border-0 bg-transparent"
-                  >
-                    TEXTO DE EJEMPLO CON DESCRIPCION CORTA SOBRE EL ALBUM.
-                  </p>
-                  <div class="d-grid gap-2 col-4 mx-auto">
-                    <a
-                      href="#"
-                      class="btn btn-outline-light fw-bold text-center"
-                      >VER MÁS</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 bg-transparent">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="180"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Image cap"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#868e96"></rect>
-                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
-                    Image cap
-                  </text>
-                </svg>
-                <div class="card text-center m-auto border-0 bg-transparent">
-                  <h4 class="card-title text-light fw-bold text-center">
-                    EJEMPLO
-                  </h4>
-                  <p
-                    class="card text-light fw-bold text-center border-0 bg-transparent"
-                  >
-                    TEXTO DE EJEMPLO CON DESCRIPCION CORTA SOBRE EL ALBUM.
-                  </p>
-                  <div class="d-grid gap-2 col-4 mx-auto">
-                    <a
-                      href="#"
-                      class="btn btn-outline-light fw-bold text-center"
-                      >VER MÁS</a
-                    >
-                  </div>
+          <div class="col main-card">
+            <div class="card body-card h-100 bg-transparent">
+              <img src="/assets/images/blog/cracker-island/cover-image/cover-art-cracker-island.jpg"
+                alt="Cover Art del album Cracker Island">
+              <div class="card text-center m-auto border-0 bg-transparent">
+                <h4 class="card-title text-light fw-bold text-center">
+                  Cracker Island
+                </h4>
+                <p class="card text-light fw-bold text-center border-0 bg-transparent">
+                  Gorillaz ha vuelto al ruedo con "Cracker Island", un single en colaboración con...
+                </p>
+                <div class="d-grid gap-2 col-5 d-md-flex mx-auto justify-content-center">
+                  <a href="/pages/blog-archive/cracker-island/blog-post.html" class="btn btn-outline-light fw-bold text-center">VER MÁS</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card h-100 bg-transparent">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="180"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Image cap"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#868e96"></rect>
-                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
-                    Image cap
-                  </text>
-                </svg>
-                <div class="card text-center m-auto border-0 bg-transparent">
-                  <h4 class="card-title text-light fw-bold text-center">
-                    EJEMPLO
-                  </h4>
-                  <p
-                    class="card text-light fw-bold text-center border-0 bg-transparent"
-                  >
-                    TEXTO DE EJEMPLO CON DESCRIPCION CORTA SOBRE EL ALBUM.
-                  </p>
-                  <div class="d-grid gap-2 col-4 mx-auto">
-                    <a
-                      href="#"
-                      class="btn btn-outline-light fw-bold text-center"
-                      >VER MÁS</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 bg-transparent">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="180"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Image cap"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#868e96"></rect>
-                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
-                    Image cap
-                  </text>
-                </svg>
-                <div class="card text-center m-auto border-0 bg-transparent">
-                  <h4 class="card-title text-light fw-bold text-center">
-                    EJEMPLO
-                  </h4>
-                  <p
-                    class="card text-light fw-bold text-center border-0 bg-transparent"
-                  >
-                    TEXTO DE EJEMPLO CON DESCRIPCION CORTA SOBRE EL ALBUM.
-                  </p>
-                  <div class="d-grid gap-2 col-4 mx-auto">
-                    <a
-                      href="#"
-                      class="btn btn-outline-light fw-bold text-center"
-                      >VER MÁS</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 bg-transparent">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="180"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Image cap"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#868e96"></rect>
-                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
-                    Image cap
-                  </text>
-                </svg>
-                <div class="card text-center m-auto border-0 bg-transparent">
-                  <h4 class="card-title text-light fw-bold text-center">
-                    EJEMPLO
-                  </h4>
-                  <p
-                    class="card text-light fw-bold text-center border-0 bg-transparent"
-                  >
-                    TEXTO DE EJEMPLO CON DESCRIPCION CORTA SOBRE EL ALBUM.
-                  </p>
-                  <div class="d-grid gap-2 col-4 mx-auto">
-                    <a
-                      href="#"
-                      class="btn btn-outline-light fw-bold text-center"
-                      >VER MÁS</a
-                    >
-                  </div>
+          <div class="col main-card">
+            <div class="card body-card h-100 bg-transparent">
+              <img src="/assets/images/blog/un-verano-sin-ti/cover-image/coveralbum.jpg"
+                alt="Cover Art del album Un Verano Sin Ti">
+              <div class="card text-center m-auto border-0 bg-transparent">
+                <h4 class="card-title text-light fw-bold text-center">
+                  Un Verano Sin Ti
+                </h4>
+                <p class="card text-light fw-bold text-center border-0 bg-transparent">
+                  Un verano sin ti es el cuarto álbum de estudio en solitario del rapero y...
+                </p>
+                <div class="d-grid gap-2 col-5 d-md-flex mx-auto justify-content-center">
+                  <a href="/pages/blog-archive/un-verano-sin-ti/blog-post.html" class="btn btn-outline-light fw-bold text-center">VER MÁS</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <aside class="col-sm-12 col-md-2" style="background-color: green">
-          <div class="col-sm-12 col-md-4 mt-3 px-2">
-            <div class="asideIndexBar text-light d-flex flex-column sticky-top">
-              <p>¿Buscas algo en especial?</p>
-              <form class="d-flex mt-0">
-                <input
-                  class="text-black form-control rounded-pill w-75"
-                  type="search"
-                  placeholder=""
-                  aria-label="Search"
-                />
-                <a href="" class="btn btn-outline-light text-center">Buscar</a>
-              </form>
-
-              <!--CATEGORIAS-->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col main-card d-none d-sm-block">
+            <div class="card body-card h-100 bg-transparent">
+              <img src="/assets/images/blog/temporada-de-reggaeton-2/cover-image/cover-album.jpg"
+                alt="Cover Art del album Temporada de Reggaeton 2">
+              <div class="card text-center m-auto border-0 bg-transparent">
+                <h4 class="card-title text-light fw-bold text-center">
+                  Temporada de Reggaeton 2
+                </h4>
+                <p class="card text-light fw-bold text-center border-0 bg-transparent">
+                  Temporada de Reggaetón 2 será la segunda parte del exitoso EP de...
+                </p>
+                <div class="d-grid gap-2 col-5 d-md-flex mx-auto justify-content-center">
+                  <a href="/pages/blog-archive/temporada-de-reggaeton-2/blog-post.html" class="btn btn-outline-light fw-bold text-center">VER MÁS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col main-card d-none d-sm-block">
+            <div class="card body-card h-100 bg-transparent">
+              <img
+                src="/assets/images/albumes/davidguetta.jpg"
+                alt="Cover Art del album Nothing But The Beat Ultimate">
+              <div class="card text-center m-auto border-0 bg-transparent">
+                <h4 class="card-title text-light fw-bold text-center">
+                  Nothing But The Beat Ultimate
+                </h4>
+                <p class="card text-light fw-bold text-center border-0 bg-transparent">
+                  Es el quinto álbum de estudio del DJ y productor musical francés...
+                </p>
+                <div class="d-grid gap-2 col-5 d-md-flex mx-auto justify-content-center">
+                  <a href="pages/404/404.html" class="btn btn-outline-light fw-bold text-center">VER MÁS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col main-card d-none d-sm-block">
+            <div class="card body-card h-100 bg-transparent">
+              <img
+                src="/assets/images/albumes/eminem.jpg"
+                alt="Cover Art del album The Eminem Show">
+              <div class="card text-center m-auto border-0 bg-transparent">
+                <h4 class="card-title text-light fw-bold text-center">
+                  The Eminem Show
+                </h4>
+                <p class="card text-light fw-bold text-center border-0 bg-transparent">
+                  Es el cuarto álbum de estudio del cantante estadounidense...
+                </p>
+                <div class="d-grid gap-2 col-5 d-md-flex mx-auto justify-content-center">
+                  <a href="pages/404/404.html" class="btn btn-outline-light fw-bold text-center">VER MÁS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col main-card d-none d-sm-block">
+            <div class="card body-card h-100 bg-transparent">
+              <img
+                src="/assets/images/albumes/redhot-califonication.jpg"
+                alt="Cover Art del album Californication">
+              <div class="card text-center m-auto border-0 bg-transparent">
+                <h4 class="card-title text-light fw-bold text-center">
+                  Californication
+                </h4>
+                <p class="card text-light fw-bold text-center border-0 bg-transparent">
+                  Es el nombre del séptimo álbum de estudio de la banda...
+                </p>
+                <div class="d-grid gap-2 col-5 d-md-block mx-auto">
+                  <a href="pages/404/404.html" class="btn btn-outline-light fw-bold text-center">VER MÁS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col main-card d-none d-sm-block">
+            <div class="card body-card h-100 bg-transparent">
+              <img
+                src="/assets/images/albumes/sumo-afterchabon.jpg"
+                alt="Cover Art del album After Chabón">
+              <div class="card text-center m-auto border-0 bg-transparent">
+                <h4 class="card-title text-light fw-bold text-center">
+                  After Chabón
+                </h4>
+                <p class="card text-light fw-bold text-center border-0 bg-transparent">
+                  Es el tercer álbum de estudio del grupo musical de Argentina...
+                </p>
+                <div class="d-grid gap-2 col-5 d-md-flex mx-auto justify-content-center">
+                  <a href="pages/404/404.html" class="btn btn-outline-light fw-bold text-center">VER MÁS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col main-card d-none d-sm-block">
+            <div class="card body-card h-100 bg-transparent">
+              <img
+                src="/assets/images/albumes/sublime-sublime.jpg"
+                alt="Cover Art del album Sublime">
+              <div class="card text-center m-auto border-0 bg-transparent ">
+                <h4 class="card-title text-light fw-bold text-center">
+                  Sublime
+                </h4>
+                <p class="card text-light fw-bold text-center border-0 bg-transparent">
+                  Es el disco homónimo de la banda californiana Sublime y...
+                </p>
+                <div class="d-grid gap-2 col-5 d-md-flex mx-auto justify-content-center">
+                  <a href="pages/404/404.html" class="btn btn-outline-light fw-bold text-center">VER MÁS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- BARRA LATERAL -->
+      <aside class="col-md-3">
+        <div class="div-contenedor-home">
+          <div class="search-sideBar">
+            <p>¿Buscas algo en especial?</p>
+            <form class="d-flex mt-0">
+              <input class="text-black rounded-pill input-buscar" type="search" placeholder="Busca dentro del sitio"
+                aria-label="Search" minlength="1" />
+              <a href="pages/404/404.html" class="btn btn-outline-light text-center d-none d-lg-block">Buscar</a>
+            </form>
+            <!--CATEGORIAS-->
+            <br />
+            <div class="accordion-body d-flex flex-column contenedor-categorias-home">
+              <h5>CATEGORIAS:</h5>
+              <a href="/pages/albums/albums.html" class="categoriaMusical">Ver todas las categorías</a>
               <br />
-              <div class="accordion-body d-flex flex-column">
-                <h5>CATEGORIAS</h5>
-                <a href="" class="categoriaMusical">Ver todas las categorías</a>
-                <br />
-                <a href="" class="categoriaMusical">Rock Nacional</a>
-                <a href="" class="categoriaMusical">Rock Internacional</a>
-                <a href="" class="categoriaMusical">Trap</a>
-                <a href="" class="categoriaMusical">Reggaeton</a>
-                <a href="" class="categoriaMusical">Heavy metal</a>
-                <a href="" class="categoriaMusical">Pop</a>
+              <a href="/pages/404/404.html" class="categoriaMusical">Rock Nacional</a>
+              <a href="/pages/404/404.html" class="categoriaMusical">Rock Internacional</a>
+              <a href="/pages/404/404.html" class="categoriaMusical">Trap</a>
+              <a href="/pages/404/404.html" class="categoriaMusical">Reggaeton</a>
+              <a href="/pages/404/404.html" class="categoriaMusical">Heavy metal</a>
+              <a href="/pages/404/404.html" class="categoriaMusical">Pop</a>
+            </div>
+          </div>
+          <!-- CAROUSEL DE PUBLICIDAD -->
+          <div id="carouselAdvertisingIndex" class="carousel slide d-none d-sm-block" data-bs-ride="carousel">
+            <div class="carousel-inner adv-item">
+              <div class="carousel-item active ">
+                <img src="/assets/images/advertising/Publicidad-1.png" class="d-block w-100"
+                  alt="Publicidad Internet Fibra Optica">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/images/advertising/publicidad-2.png" class="d-block w-100"
+                  alt="Publicidad Clases Particulares Programacion">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/images/advertising/publicidad-3.png" class="d-block w-100"
+                  alt="Publicidad Rollincode Becas">
               </div>
             </div>
           </div>
-        </aside>
+        </div>
+    </div>
+    </aside>
+    </div>
+  </main>
+
+  <!-- //////////////////////// /////   FOOTER   //////////////////////////////////////////////-->
+  <footer class="container-fluid text-white">
+    <div class="row">
+      <!--///////////////////////////    SECTION 1   ///////////////////////////////////////////////  -->
+      <div class="col-12 col-md-4 d-flex justify-content-center">
+        <div>
+          <div class="">
+            <h6 class="pt-3  font-footer fs-5 footer-title">Siguenos en nuestras redes!</h6>
+          </div>
+          <div class="ps-5 d-flex justify-content-end flex-column font-responsive">
+
+            <i class="fa-brands fa-facebook font-responsive"> <a class="font-footer" href="https://www.facebook.com/"
+                target="_blank">Facebook</a> </i>
+
+            <i class="fa-brands fa-instagram font-responsive">
+              <a class="font-footer " href="https://www.instagram.com" target="_blank">Instagram</a></i>
+            <i class="fa-brands fa-twitter font-responsive">
+              <a class="font-footer " href="https://twitter.com" target="_blank">Twitter</a></i>
+            <i class="fa-brands fa-whatsapp pb-2 font-responsive">
+              <a class="font-footer " href="https://wa.link/q0dmh4" target="_blank">Whatsapp</a></i>
+
+
+          </div>
+          <div>
+            <div class="">
+              <h6 class=" font-footer fs-5 footer-title-dos">Agregamos novedades todas las semanas!</h6>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
-  </body>
-  <!-- ================================================
+      <!--////////////////////////////     SECTION 2   ///////////////////////////////////////////  -->
+      <div class="col-12 col-md-4 d-flex flex-column">
+        <div class="pb-2 pt-2 d-flex justify-content-center">
+          <div class="pt-3">
+            <img src="/assets/images/logo-proyect/logo.gif" class="card-footer" alt="qsdqd" />
+          </div>
+
+
+        </div>
+        <div class="d-flex justify-content-center pb-3 font-footer pe-2">Blogtify</div>
+
+      </div>
+
+      <div class="col-12 col-md-4 border-1 border-light">
+        <div class="pt-3 pe-2 footer-title-dos ">
+          <h4 class="font-footer d-flex justify-content-center ps-4 pe-5">Suscríbite para las últimas novedades de la
+            música!</h4>
+        </div>
+        <form class="footer-title-dos">
+          <div class=" d-flex justify-content-center pe-5 ps-0"> <input type="email" class="footer-input pe-5"
+              placeholder="ejemplo@correo.com" minlength="10" maxlength="40" required> <input type="submit"
+              class="btn btn-outline-light ms-1"></div>
+
+      </div>
+      </form>
+    </div>
+    </div>
+    <!--  /////////////////////////////////////////////////////////////////////////////////// -->
+  </footer>
+</body>
+<!-- ================================================
                   Scripts
   ================================================ -->
-  <!-- Cambié aqui la referencia para poder trabajar offline -->
-  <script
-    src="/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"
-  ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
 </html>

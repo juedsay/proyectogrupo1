@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background: #0f0326;
+  --background-transparente: rgba(0, 0, 0, 0.4);
+  --color-focus-input: #1ed760;
+  --facebook-button-color: #2374e1;
+  --google-button-color: #eb4235;
+  --input-focus: #1ed760;
+  --color-estrellas: #ffa500;
+  --album-image: url(/assets/images/blog/un-verano-sin-ti/cover-image/coveralbum.jpg);
+  --color-spotify: #1ccc5b;
+  --color-apple-music: #fb233b;
+  --color-amazon-music: #4300ff;
+}
+body.single-post-body {
+  background-image: var(--album-image) !important;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overlay-blur {
+  background-color: var(--background-transparente);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.contenedor-album-data {
+  display: flex;
+  padding: 3rem;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  width: 90%;
+}
+div.imagen-album {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.imagen-album picture {
+  max-width: 100%;
+  overflow: hidden;
+}
+.imagen-album picture img {
+  border-radius: 20px;
+  max-width: 100%;
+}
+div.album-info {
+  min-width: 33%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+h2.album-title-blog {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase !important;
+  font-family: "Oswald", sans-serif;
+}
+.artistas-y-estrellas {
+  display: flex;
+  flex-direction: column;
+}
+h3.album-artist-name-blog {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase !important;
+  font-family: "Oswald", sans-serif;
+}
+div.estrellas-album-info i {
+  font-size: 1.5rem;
+  color: var(--color-estrellas);
+}
+p.album-description-blog {
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+}
+.title-artist-in-album {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+div.artist-in-album {
+  background-color: var(--background);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+.contenedor-artistas-blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 90%;
+  flex-wrap: wrap;
+}
+.artist-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  width: 12%;
+}
+.artist-info picture img {
+  border-radius: 100%;
+  max-width: 100px;
+}
+.title-disponible-en-plataformas {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.button-plataformas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.boton-escuchar-en {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  width: 20rem;
+  padding: 0.3rem;
+  border-radius: 20px;
+  margin-bottom: 4rem;
+}
+.spotify-button:hover,
+.spotify-button:focus {
+  border-color: var(--color-spotify);
+  background-color: var(--color-spotify);
+  transition: 0.3s ease-in-out;
+}
+.apple-button:hover,
+.apple-button:focus {
+  border-color: var(--color-apple-music);
+  background-color: var(--color-apple-music);
+  transition: 0.3s ease-in-out;
+}
+.amazon-button:hover,
+.amazon-button:focus {
+  border-color: var(--color-amazon-music);
+  background-color: var(--color-amazon-music);
+  transition: 0.3s ease-in-out;
+}
+@media screen and (max-width: 1440px) {
+  .contenedor-album-data {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .imagen-album,
+  .album-info {
+    min-width: 90% !important;
+  }
+  .artistas-y-estrellas {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .title-artist-in-album {
+    text-align: center;
+  }
+}
+/* 
+================================================================
+                      Seccion comentarios
+================================================================ */
+.coments-section {
+  background-color: var(--background);
+  padding-left: 1rem;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+.form-comments-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form.comment-form {
+  display: flex;
+  flex-direction: column;
+}
+form.comment-form label {
+  font-size: 1.2rem;
+}
+.input-comment-form {
+  width: 20rem;
+  margin-top: 0.3rem;
+}
+.button-comment-form {
+  width: 20rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: white solid 2px;
+  color: white;
+}
+div.container-all-comments {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+div.comment {
+  background-color: rgba(0, 0, 0, 0.335);
+  width: 40%;
+  padding: 2rem;
+  border-radius: 20px;
+}
+.porfile-info {
+  display: flex;
+  align-items: center;
+}
+img.porfile-picture-comment {
+  max-width: 50px;
+  border-radius: 100%;
+}
+h4.name-person-comment {
+  margin-left: 0.5rem;
+}
+.comment-text {
+  margin-top: 1rem;
+}
+@media screen and (max-width: 768px) {
+  div.comment {
+    width: 80%;
+  }
+}
+
+/* =============================
+    Fin area comentarios
+============================= */
+
+@media screen and (max-width: 1024px) {
+  .artist-info {
+    width: 40%;
+  }
+  .button-plataformas {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .boton-escuchar-en {
+    margin-bottom: 0;
+  }
+  .plataformas-blog-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* 
+================================================================
+Cambio el color del footer para tapar la imagen del cover album
+================================================================ */
+
+footer {
+  background-color: #0b021d;
+}

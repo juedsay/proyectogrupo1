@@ -1,0 +1,192 @@
+/* Estilo de la barra de scroll */
+::-webkit-scrollbar {
+  width: 10px !important;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--hover-a);
+  border-radius: 10px !important;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #73fea4 !important;
+}
+:root {
+  --header-bgcolor: rgba(0, 0, 0, 0.7);
+  --hover-a: #1ed760;
+}
+
+/* ======================
+        Header 
+====================== */
+header.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  backdrop-filter: blur(10px) saturate(120%) !important;
+  -webkit-backdrop-filter: blur(10px) saturate(120%) !important;
+  font-family: "Oswald", sans-serif;
+}
+nav.navbar-universal {
+  background-color: var(--header-bgcolor) !important;
+  color: white;
+  /* min-height: 5rem; */
+  padding-bottom: 1rem;
+  height: 100% !important;
+  text-transform: uppercase;
+}
+img.logo-header {
+  width: 70px !important;
+}
+nav.navbar-universal a {
+  color: white;
+}
+
+nav.navbar-universal ul li a {
+  font-size: 1rem;
+}
+button.boton-suscribirse {
+  background-color: transparent;
+  border: white 2px solid;
+  border-radius: 10px;
+  color: white;
+  width: 40%;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+button.boton-suscribirse:hover,
+button.boton-suscribirse:focus,
+button.boton-suscribirse:active {
+  background-color: white;
+  color: black;
+  border: white 2px solid;
+  border-radius: 10px;
+  outline: none;
+}
+.contenedor-botones-header {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.link-login {
+  display: flex;
+  align-items: center;
+}
+i.icono-login-usuario {
+  font-size: 1.5rem;
+}
+.navbar-toggler-icon {
+  font-size: 1.3rem;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* =============================
+          Modal Pop-Up
+============================= */
+
+.pop-up-suscribirse {
+  background-color: var(--header-bgcolor) !important;
+  color: white !important;
+  backdrop-filter: blur(10px) saturate(120%) !important;
+  -webkit-backdrop-filter: blur(10px) saturate(120%) !important;
+  font-family: "Oswald", sans-serif;
+}
+.formulario-suscribirse {
+  display: flex !important;
+  flex-direction: column !important;
+}
+.boton-cerrar-popup {
+  filter: invert(1) !important;
+}
+.boton-cerrar-popup:hover,
+.boton-cerrar-popup:focus,
+.boton-cerrar-popup:active {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.botones-popup {
+  background-color: transparent !important;
+  color: white !important;
+  border: solid 2px white !important;
+}
+
+/* =============================
+
+Media query Tablet en adelante
+
+============================= */
+@media screen and (min-width: 768px) {
+  .logo-area-header a {
+    font-size: 2rem;
+  }
+  nav.navbar-universal ul li a {
+    font-size: 1.3rem;
+  }
+  button.boton-suscribirse {
+    font-size: 1.3rem;
+    width: 30%;
+  }
+  i.icono-login-usuario {
+    font-size: 2rem;
+  }
+
+  i.icono-login-usuario {
+    font-size: 1.5rem;
+  }
+  span.navbar-toggler-icon {
+    font-size: 1.5rem;
+  }
+}
+/* =============================
+
+Media query Large en adelante
+
+============================= */
+@media screen and (min-width: 992px) {
+  nav.navbar-universal {
+    text-align: right;
+  }
+  .logo-area-header a {
+    font-size: 2rem;
+  }
+  nav.navbar-universal ul li a {
+    font-size: 1rem;
+  }
+  button.boton-suscribirse {
+    margin-left: 2rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+  }
+  i.icono-login-usuario {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  ul.ul-navbar-main {
+    margin-left: auto;
+  }
+  button.boton-suscribirse {
+    width: 100%;
+  }
+  i.icono-login-usuario {
+    font-size: 1.5rem;
+  }
+  .li-links-navbar {
+    transition: transform 0.2s ease-in-out;
+  }
+  .li-links-navbar:hover,
+  .li-links-navbar:focus {
+    transform: translateY(-5px);
+    color: var(--hover-a) !important;
+  }
+  .li-links-navbar a:hover,
+  .li-links-navbar a:focus {
+    color: var(--hover-a) !important;
+  }
+}
